@@ -1,0 +1,39 @@
+.project
+    @extend  %center
+    @include flex_column_center()
+    margin-bottom: 96px
+
+    &__heading
+        @include flex_column_center()
+        max-width: 737px
+        margin-bottom: 93px
+
+    &__heading-title
+        font-family: "DM Serif Display"
+        font-size: 50px
+        line-height: 125%
+        margin-bottom: 8px
+    &__heading-text
+        text-align: center
+        line-height: 150%
+
+.project-box
+    @extend %center
+    margin-bottom: 96px
+    display: grid
+    grid-template-columns: repeat(2, $halfSide)
+    gap: 56px 104px
+
+    &__img
+        width: 100%
+        margin-bottom: 24px
+
+    &__content
+        display: flex
+        justify-content: space-between
+
+    &__title
+        font-family: "DM Serif Display"
+        font-size: 25px
+        line-height: 125%
+        margin-bottom: 4px

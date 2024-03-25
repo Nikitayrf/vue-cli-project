@@ -1,0 +1,63 @@
+.blog
+    @extend %center
+    margin-bottom: 96px
+    @include flex_column_center()
+
+    &__heading
+        @include flex_column_center_gap(12px)
+        max-width: 811px
+        margin-bottom: 52px
+    &__heading-title
+        font-family: "DM Serif Display"
+        font-size: 50px
+        line-height: 125%
+        margin-bottom: 12px
+    &__heading-text
+        text-align: center
+        line-height: 150%
+
+.news
+    padding: 21px
+    border-radius: 75px
+    border: 1px solid #E7E7E7
+
+    &-box
+        @extend %center
+        display: grid
+        grid-template-columns: repeat(3, $thirdSide)
+        gap: 27px
+
+    &__content
+        position: relative
+        padding-bottom: 16px
+
+    &__img
+        margin-bottom: 21px
+
+    &__button
+        display: flex
+        position: absolute
+        border-radius: 10px 10px 10px 0
+        top: 228px
+        left: 20px
+        background-color: #fff
+        padding: 11px 6px
+        font-size: 16px
+        line-height: 150%
+
+    &__title
+        font-family: "DM Serif Display"
+        font-size: 25px
+        font-weight: 400
+        line-height: 125%
+        width: 305px
+        height: 70px
+        margin-bottom: 30px
+
+    &-nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &_select
+        background-color: #F4F0EC

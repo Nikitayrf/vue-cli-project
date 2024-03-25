@@ -1,0 +1,72 @@
+.blog
+    @extend %center
+    margin-bottom: 200px
+
+.news-articles
+    &__title
+        font-family: "DM Serif Display"
+        font-size: 50px
+        line-height: 125%
+
+.latest-post
+    @extend %center
+    margin-bottom: 150px
+
+    &__heading
+        font-family: "DM Serif Display"
+        font-size: 50px
+        line-height: 125%
+        margin-bottom: 27px
+
+    &__box
+        display: flex
+        gap: 65px
+        padding: 21px
+        border-radius: 75px
+        border: 1px solid #E7E7E7
+
+    &__content-box
+        margin-top: 54px
+        margin-right: 34px
+    &__content
+        margin-right: 20px
+        margin-bottom: 40px
+    &__title
+        font-family: "DM Serif Display"
+        font-size: 25px
+        line-height: 125%
+        margin-bottom: 22px
+    &__text
+        line-height: 150%
+
+    &-nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+.pagination
+    @extend %center
+    margin-top: 51px
+    &__item
+        width: 52px
+        height: 52px
+        border: 1px solid #CDA274
+        border-radius: 50%
+        color: #292F36
+        display: flex
+        align-items: center
+        justify-content: center
+    &__item:hover
+        background: #F4F0EC
+        border: 1px solid #F4F0EC
+
+    &__text
+        font-size: 16px
+        font-weight: 500
+        line-height: 150%
+
+.pagination-box
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 20px

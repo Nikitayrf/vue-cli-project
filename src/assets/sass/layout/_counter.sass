@@ -1,0 +1,29 @@
+.counter
+    @extend %center
+    margin-bottom: 96px
+    padding-top: 151px
+    padding-bottom: 151px
+    background-color: #f4f0ec
+    display: flex
+    justify-content: center
+
+.counter-box
+    display: flex
+    gap: 60px
+    text-align: center
+
+    &__item
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        gap: 76px
+    &__item:not(:last-child)::after
+        content: ''
+        border-right: 1px solid #cda274
+
+    &__item-title
+        font-family: "DM Serif Display"
+        font-size: 85px
+        line-height: 125%
+        color: #CDA274
+        padding-bottom: 16px

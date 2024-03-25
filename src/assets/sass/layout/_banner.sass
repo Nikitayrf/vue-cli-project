@@ -1,0 +1,29 @@
+.banner
+    margin-bottom: 200px
+    &__inner
+        background-image: url("../img/banner_white_kitchen_left_vase_right_mixer.png")
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        display: flex
+        justify-content: center
+        min-height: 351px
+        position: relative
+        margin-bottom: 200px
+
+    &__intro
+        @include flex_column_center()
+        position: absolute
+        width: 503px
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        background-color: #fff
+        padding: 41px 78px
+        border-top-left-radius: 50px
+        border-top-right-radius: 50px
+    &__title
+        font-family: "DM Serif Display"
+        font-size: 50px
+        line-height: 125%
